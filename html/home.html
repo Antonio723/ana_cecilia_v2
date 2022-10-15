@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo_ana_cecilia_v4.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home/screen.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo">
+        </figure>
+        <aside id="menus">
+            <nav class="normal_menu">
+                <ul class="menu-screen">
+                    <li class="item_menu"><a href="" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
+                    <li class="item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
+                    <li class="item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_icon.png"
+                        alt="menu_icon" class="icon"></button>
+                <ul class="menu-mobile">
+                    <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
+                    <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    <main>
+        <article class="slider">
+            <img src="#" alt="">
+        </article>
+        <article class="historia">
+
+        </article>
+        <article class="dados_fome">
+
+        </article>
+        <article class="incentivo_doacao">
+
+        </article>
+    </main>
+    <footer>
+        <div class="informacoes">
+            <div class="endereco">
+                <h2>Associação Ana cecilia</h2>
+                <p class="endereco">Rua nao sei onde nº954</p>
+                <p>bairro aleatorio - municipio</p>
+                <p>cep: 63015-500</p>
+            </div>
+            <div class="mapa">
+                <img src="../img/mapa.png" alt="mapa">
+            </div>
+            <div class="contato">
+                <h2>Contato</h2>
+                <p>(11) 4170-7070</p>
+                <p>assciacao@email.com.br</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>Copyright ₢ 2022 Associação Ana Cecília todos direitos reservados</h3>
+            <h3>Desenvolvido por <a href="http://lemon.com">Lemon</a></h3>
+        </div>
+    </footer>
+</body>
+<script>
+    function AbrirMenu() {
+        if (document.querySelector('.menu-mobile').style.display != "none") {
+            document.querySelector('.icon').src = ""; //menu fechado
+            document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
+        } else {
+            document.querySelector('.icon').src = "../img/menu_mobile_icon.png"; //menu aberto
+            document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
+        }
+    }
+</script>
+
+</html>

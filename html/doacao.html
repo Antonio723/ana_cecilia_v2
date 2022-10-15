@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home/screen.css">
+    <title>HOME</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../img/qr_code.png" alt="logo">
+        </figure>
+        <aside id="menus">
+            <nav class="normal_menu">
+                <ul class="menu-screen">
+                    <li class="item_menu"><a href="home.html" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Contato</a></li>
+                    <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_icon.png" alt="menu_icon" class="icon"></button>
+                <ul class="menu-mobile">
+                    <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
+                    <li class="item_menu"><a href="" class="text_menu">Contato</a></li>
+                    <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    function AbrirMenu(){
+        if(document.querySelector('.menu-mobile').style.display != "none"){
+            document.querySelector('.icon').src = ""; //menu fechado
+            document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
+        }else{
+            document.querySelector('.icon').src = "../img/menu_mobile_icon.png"; //menu aberto
+            document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
+        }
+    }
+</script>
+</html>
