@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo_ana_cecilia_v4.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main_mobile.css">
     <link rel="stylesheet" href="../css/home/screen.css">
-    <title>HOME</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <aside id="menus">
             <nav class="normal_menu">
                 <ul class="menu-screen">
-                    <li class="item_menu"><a href="" class="text_menu">Home</a></li>
+                    <li class="item_menu selecionado"><a href="" class="text_menu">Home</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
                     <li class="item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
@@ -27,19 +28,19 @@
                 </ul>
             </nav>
             <nav class="mobile">
-                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_icon.png"
-                        alt="menu_icon" class="icon"></button>
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
+                        alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
                     <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
                     <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
-                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a>
-                    </li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
                 </ul>
             </nav>
         </aside>
     </header>
     <main>
+        HOMEMPAGE
         <article class="slider">
             <img src="#" alt="">
         </article>
@@ -75,19 +76,21 @@
             </div>
         </div>
         <div class="copyright">
-            <h3>Copyright ₢ 2022 Associação Ana Cecília todos direitos reservados</h3>
-            <h3>Desenvolvido por <a href="http://lemon.com">Lemon</a></h3>
+            <h3>Copyright ₢ 2022 <span class="strong">Associação Ana Cecília</span> todos direitos reservados</h3>
+            <h3>Desenvolvido por <a href="http://lemon.com"><span>Lemon</span></a></h3>
         </div>
     </footer>
 </body>
 <script>
     function AbrirMenu() {
         if (document.querySelector('.menu-mobile').style.display != "none") {
-            document.querySelector('.icon').src = ""; //menu fechado
             document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
+            document.querySelector('.mobile').style.marginTop = '0px';
+            document.querySelector('.icon').style.transform  = "rotate(0deg)"; //menu fechado
         } else {
-            document.querySelector('.icon').src = "../img/menu_mobile_icon.png"; //menu aberto
+            document.querySelector('.icon').style.transform  = "rotate(90deg)"; //menu fechado
             document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
+            document.querySelector('.mobile').style.marginTop = '250px';
         }
     }
 </script>
