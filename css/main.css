@@ -70,22 +70,28 @@ header #main_logo{
 }
 
 footer{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    background-color: #230F9C;
+    color: #DDD9D9;
+    
 }
 
 .informacoes{
-    height: 400px;
-    background-color: #230F9C;
+    height: 350px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.justificador{
+    padding-left: 25px;
+    margin-top: 20px;
+}
 
 .copyright{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 100;
 }
