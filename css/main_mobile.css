@@ -11,14 +11,14 @@
         background-color: var(--backgroun-color-dark);
         border-radius: 15px;
     }
-
+    
     .menu-mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px 30px;
         row-gap: 20px;
-
+        right: -250px;
     }
 
     #icon_menu{
@@ -33,6 +33,17 @@
 
     #menu-mobile-button{
         background-color: var(--backgroun-color-dark);
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    .informacoes{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
 }

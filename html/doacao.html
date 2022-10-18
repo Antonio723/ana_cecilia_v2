@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main_mobile.css">
     <link rel="stylesheet" href="../css/home/screen.css">
-    <title>Doação</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <aside id="menus">
             <nav class="normal_menu">
                 <ul class="menu-screen">
-                    <li class="item_menu selecionado"><a href="home.html" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="" class="text_menu selecionado">Home</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
                     <li class="item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
@@ -28,20 +28,20 @@
                 </ul>
             </nav>
             <nav class="mobile">
-                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_icon.png"
-                        alt="menu_icon" class="icon"></button>
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
+                        alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
                     <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
                     <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
-                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a>
-                    </li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
                 </ul>
             </nav>
         </aside>
     </header>
     <main>
         DOAÇÃO
+       
     </main>
     <footer>
         <div class="informacoes">
@@ -73,13 +73,17 @@
 <script>
     function AbrirMenu() {
         if (document.querySelector('.menu-mobile').style.display != "none") {
-            document.querySelector('.icon').src = ""; //menu fechado
             document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
+            document.querySelector('.mobile').style.marginTop = '0px';
+            document.querySelector('.icon').style.transform  = "rotate(0deg)"; //menu fechado
         } else {
-            document.querySelector('.icon').src = "../img/menu_mobile_icon.png"; //menu aberto
+            document.querySelector('.icon').style.transform  = "rotate(90deg)"; //menu fechado
             document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
+            document.querySelector('.mobile').style.marginTop = '250px';
         }
     }
+
+    AbrirMenu();
 </script>
 
 </html>
