@@ -1,0 +1,113 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: var(--backgroun-color-primary);
+    width: 60%;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 80px;
+    padding: 50px 130px;
+}
+
+main>h1{
+    padding: 0 0 50px 0;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 18px;
+}
+
+.mainInputs{
+    width: 100%;
+    padding: 13px 0 13px 30px;
+    border: 1px solid #171717;
+    border-radius: 15px;
+}
+
+.typeDoacao{
+    width: 100%;
+}
+
+.typeDoacao>h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.donationType{
+    display: flex;
+    justify-content: space-between;
+}
+
+.donationTypeItem{
+    display: flex;
+    column-gap: 10px;
+}
+
+#aboutDonation{
+
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px 70px 30px 24px;
+    margin-top: 30px;
+}
+
+.terms{
+    display: flex;
+    column-gap: 45px;
+}
+
+.termItem{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+}
+
+#submit{
+    width: 120px;
+    padding: 9px 34px;
+    background-color: #EAECE8;
+    border: solid #171717 1px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.bankDonation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donationBank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.bankDonation>h2{
+    font-weight: bold;
+}
+
+.boldTitles{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+input::after{
+    width: 100px;
+    background: #171717;
+}
+
+input::before{
+    background-color: #171717;
+}

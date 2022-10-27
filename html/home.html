@@ -31,6 +31,7 @@
                 <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
                         alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
+                    <li class="item_menu"><a href="" class="text_menu selecionado">Home</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li>
                     <li class="quebraDeTexto item_menu causa"><a href="" class="text_menu">Junte-se à causa</a></li>
@@ -90,7 +91,7 @@
         } else {
             document.querySelector('.icon').style.transform  = "rotate(90deg)"; //menu fechado
             document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
-            document.querySelector('.mobile').style.marginTop = '250px';
+            document.querySelector('.mobile').style.marginTop = '300px';
         }
     }
 

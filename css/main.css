@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    margin: 0px;
-	padding: 0px;
+    margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	outline: none;
 	border: none;
@@ -14,10 +14,15 @@
     --backgroun-color-primary: #230F9C;
     --main-button: #E04B4B;
     --background-secondary-dark: #E04B4B;
+    --selecionado: #E0E0E0;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 115px;
     background-color: var(--backgroun-color-dark);
     display: flex;
@@ -47,13 +52,25 @@ header #main_logo{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    padding: 10px 18px;
 }
 
 .text_menu{
+    padding: 10px 18px;
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 600;
+}
+
+.text_menu:hover{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 50px;
+    background-color: var(--selecionado);
+    color: #353535;
+    transition: 0.5s;
 }
 
 .doacao{
@@ -64,14 +81,13 @@ header #main_logo{
 
 .causa{
     width: 110px;
-    padding: 0 15px 0 15px;
 }
 
 .selecionado{
     height: 50px;
     border-radius: 15px;
     padding: 10px 18px;
-    background-color: #E0E0E0;
+    background-color: var(--selecionado);
     color: #353535;  
 }
 
@@ -114,3 +130,4 @@ footer{
 .strong{
     font-weight: 700;
 }
+

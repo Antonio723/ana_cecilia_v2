@@ -1,0 +1,20 @@
+@media (max-width:480px) {
+    main{
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        padding: 20px;
+    }
+
+    main>h1{
+        width: auto;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .mainInputs{
+        width: 80%;
+    }
+}
