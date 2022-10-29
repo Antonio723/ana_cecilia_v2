@@ -53,7 +53,6 @@ form{
 }
 
 #aboutDonation{
-
     width: 100%;
     border-radius: 15px;
     padding: 15px 70px 30px 24px;
@@ -102,12 +101,10 @@ form{
     font-weight: 700;
 }
 
-
-input::after{
-    width: 100px;
-    background: #171717;
+::placeholder{
+    white-space: normal;  
 }
 
-input::before{
-    background-color: #171717;
+.specialtext{
+    color: #6E96FC;
 }

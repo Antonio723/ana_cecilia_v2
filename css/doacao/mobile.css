@@ -6,6 +6,13 @@
         padding: 20px;
     }
 
+    main hr{
+        border: solid 1px #787878;
+        width: 90%;
+        margin-top: -30px;
+        margin-bottom: 32px;
+    }
+
     main>h1{
         width: auto;
     }
@@ -15,6 +22,34 @@
     }
 
     .mainInputs{
-        width: 80%;
+        width: 85%;
+    }
+    .donationType{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    #aboutDonation{
+        width: 90%;
+        border: solid 1px #787878;
+        padding-bottom: 50px;
+    }
+
+    .terms{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .bankDonation{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .donationBank{
+        max-width: 100%;
+    }
+    .donationItem>h2{
+        text-align: center;
     }
 }
