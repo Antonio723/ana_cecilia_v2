@@ -1,0 +1,38 @@
+@media (max-width:480px) {
+    main{
+        padding: 20px 10px;
+    }
+
+    main>h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .firstPart{
+        flex-direction: column;
+    }
+
+    .secondPart{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .doacaoImage{
+        width: 90%;
+        align-self: center;
+    }
+
+    .menuDoacao{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;    
+        padding-left: 30%;    
+    }
+
+    .itemstext hr{
+        border: solid 1px #747474;
+        margin-top: 20px;
+    }
+    
+
+}
