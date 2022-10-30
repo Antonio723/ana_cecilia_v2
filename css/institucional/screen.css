@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 60px 80px 60px;
+    font-size: 1.3em;
+}
+
+.bold{
+    font-weight: 700;
+}
+hr{
+    width: 80%;
+    border: solid 1px #797979;
+    margin-bottom: 40px;
+}
+.membersSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.memberGroup{
+    max-width: 330px;
+}
+.memberGroup>h2{
+    font-size: 1.2em;
+}
+
+.columnMembers{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+.partnerCards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+}
+
+.partnerCard{
+    display: flex;
+    width: 30%;
+    column-gap: 10px;
+}
+
+.partnerCard>img{
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    background-color: tomato;
+}
+

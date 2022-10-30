@@ -1,0 +1,43 @@
+@media (max-width:480px) {
+    main{
+        padding: 50px 30px ;
+    }
+
+    main>h1{
+        text-align: center;
+        font-size: 1.8em;
+    }
+    
+    .membersSection{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .partnerCards{
+        row-gap: 25px;
+    }
+
+    .partners>h2{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    
+    .partnerCard{
+        width: 100%;  
+        justify-content: center;     
+    }
+
+    .partnerCard>img{
+        width: 120px;        
+    }
+
+    .partnerCard{
+        width: 350px;      
+    }
+
+
+}
