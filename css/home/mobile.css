@@ -1,0 +1,28 @@
+@media (max-width:480px) {
+    main{
+        padding: 50px 30px ;
+        justify-content: center;
+    }
+
+    main>h1{
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .one{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .two{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagens>img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
