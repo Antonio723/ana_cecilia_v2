@@ -17,7 +17,8 @@ main{
 .one>img{
     width: 250px;
     height: 250px;
-    border: solid 0.5px;
+    background-color: var(--backgroun-color-dark);
+    border-radius: 15px;
 }
 
 .two{

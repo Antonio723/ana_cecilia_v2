@@ -131,3 +131,12 @@ footer{
     font-weight: 700;
 }
 
+
+main{
+    background-image: linear-gradient( rgba(255,255,255,.8) 0%,rgba(255,255,255,.8) 100%),url("../img/logo_ana_cecilia_v5.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-position-y: top;
+    background-size: 50%;
+}
+
