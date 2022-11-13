@@ -1,4 +1,8 @@
 @media (max-width:480px) {
+    main{
+        background-size: 100%;
+    }
+
     .normal_menu{
         display: none;
     }
