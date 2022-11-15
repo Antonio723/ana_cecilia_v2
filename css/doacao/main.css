@@ -80,6 +80,12 @@ form{
     border-radius: 15px;
 }
 
+.itemDonationPix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bankDonation{
     width: 100%;
     display: flex;
