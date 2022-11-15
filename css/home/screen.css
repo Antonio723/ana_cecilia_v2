@@ -6,15 +6,25 @@ main{
     row-gap: 50px;
     font-size: 1.3em;
     text-align: justify;
+    background-repeat: no-repeat;
+}
+
+.subsection{
+    display: flex;
+    column-gap: 20px;
+}
+
+.one>h2{
+    text-align: center;
 }
 
 .one{
     display: flex;
-    column-gap: 20px;
-
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.one>img{
+.subsection>img{
     width: 250px;
     height: 250px;
     background-color: var(--backgroun-color-dark);
