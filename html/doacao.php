@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="../img/logo_ana_cecilia_v4.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main_mobile.css">
-    <link rel="stylesheet" href="../css/institucional/screen.css">
-    <link rel="stylesheet" href="../css/institucional/mobile.css">
-    <title>Institucional</title>
+    <link rel="stylesheet" href="../css/doacao/main.css">
+    <link rel="stylesheet" href="../css/doacao/mobile.css">
+    <title>Doação</title>
 </head>
 
 <body>
@@ -23,10 +23,10 @@
             <nav class="normal_menu">
                 <ul class="menu-screen">
                     <li class="item_menu"><a href="home.html" class="text_menu">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu selecionado">Institucional</a></li>
+                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <!-- <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li> -->
                     <li class="item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
-                    <li class="item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a></li>
+                    <li class="item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a></li>
                 </ul>
             </nav>
             <nav class="mobile">
@@ -34,90 +34,72 @@
                         alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
                     <li class="item_menu"><a href="home.html" class="text_menu">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu selecionado">Institucional</a></li>
+                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <!-- <li class="item_menu"><a href="" class="text_menu">Nossas ações</a></li> -->
                     <li class="quebraDeTexto item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
-                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.html" class="text_menu">QUERO DOAR</a>
                     </li>
                 </ul>
             </nav>
         </aside>
     </header>
     <main>
-        <h1 class="bold">NOSSA EQUIPE</h1>
-        <section class="membersSection">
-            <div class="leftMebers columnMembers">
-                <div class="memberGroup">
-                    <h2 class="bold teste">PRESIDENTE</h2>
-                    <p>Manoel luiz de Souza</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">VICE-PRESIDENTE</h2>
-                    <p>Roberth Souto Dias</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">Secretária</h2>
-                    <p>Vanessa Oliveira D. da Silva</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">Diretor de Projetos</h2>
-                    <p>Hildebrando Coreia de Sousa</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">Tesoureiro</h2>
-                    <p>Valdiner Fernandes Coura</p>
-                </div>
-            </div>
-            <div class="rightMebers columnMembers">
-                <div class="memberGroup">
-                    <h2 class="bold">Conselheiros Titulares</h2>
-                    <p>José Jesus dos Santos</p>
-                    <p>Gustavo Neto de Souza</p>
-                    <p>José Paulino Martins</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">Conselheiros Suplentes</h2>
-                    <p>Noelia da Silva Souza</p>
-                    <p>Paulo Sérgio da Silva</p>
-                    <p>Nilton Sérgio Ferreira Mello</p>
-                </div>
-                <div class="memberGroup">
-                    <h2 class="bold">Auxiliares</h2>
-                    <p>Felipe Souto Dias</p>
-                    <p>Victor Hugo Arruda Soares</p>
-                    <p>Pedro Pedroso Camara</p>
-                    <p>Pedro Henrique Melo</p>
-                    <p>Rafael Souto Dias</p>
-                    <p>Bianca Oliveira de Souza</p>
-                    <p>Aline Oliveira D. da Silva</p>
-                    <p>Igor Machado Lazdenas</p>
-                    <p>Rafael Luiz Silva Souza</p>
-                    <p>Gabriel Cruz Gomes da Silva</p>
-                    <p>Thiago Alves da Silva</p>
-                </div>
-
-            </div>
-        </section>
+        <h1>
+            Faça uma doação
+        </h1>
         <hr>
-        <div class="partners">
-            <h2 class="bold">NOSSOS COLABORADORES</h2>
-            <div class="partnerCards">
-                <div class="partnerCard">
-                    <img src="../img/lemonLogo.png" alt="logo">
-                    <div class="partnerTexts ">
-                        <h3 class="bold">Lemon</h3>
-                        <p>www.lemon.com.br</p>
+        <form action="main.php" method="post">
+            <input id="name" type="text" name="name" placeholder="Nome:" class="mainInputs">
+            <input id="Telefone" type="tel" name="tel" placeholder="Telefone:" class="mainInputs">
+            <input type="email" id="email" name="email" placeholder="E-mail:" class="mainInputs">
+            <div class="typeDoacao">
+                <h2>Tipo de doação</h2>
+                <div class="donationType">
+                    <div class="donationTypeItem">
+                        <input id="typeMoeny" type="checkbox" name="" id="">
+                        <label for="typeMoeny">dinheiro</label>
                     </div>
-                </div>
-                <div class="partnerCard textPartener">
-                    <img src="../img/empresa1.png" alt="logo">
-                    <div class="partnerTexts">
-                        <h3 class="bold">SW ENGENHARIA</h3>
-                        <p><a href="https://www.swengenhariaeconstrucoes.com.br/">www.swengenhari...</a></p>
+                    <div class="donationTypeItem">
+                        <input id="typeFood" type="checkbox" name="" id="">
+                        <label for="typeFood">alimento/material</label>
+                    </div>
+                    <div class="donationTypeItem">
+                        <input id="typeServices" type="checkbox" name="" id="">
+                        <label for="typeServices">Serviços</label>
                     </div>
                 </div>
             </div>
-        </div>
+            <input type="text" id="aboutDonation" placeholder="Escreva observações ou descrição da sua doação (caso necessario):">
+            <div class="terms">
+                <div class="termItem">
+                    <input type="checkbox" name="privacityPolitic" id="privacityPolitic" required>
+                    <label for="privacityPolitic">Li e aceito a <span class="specialtext">POLITICA DE PRIVACIDADE</span></label>
+                </div>
+                <div class="termItem">
+                    <input type="checkbox" name="contact" id="contact" required>
+                    <label for="contact">Aceito ser contatado pela associação Ana Cecilia</label>
+                </div>
+            </div>
+            <button type="submit" id="submit">Enviar</button>
+            <p><span class="boldTitles">OU</span></p>
+            <div class="bankDonation">
+                <div class="donationItem itemDonationPix">
+                    <h2>Faça um pix</h2>
+                    <img src="../img/qr_code.png" alt="qrCode">
+                    <p class="strong">CNPJ</p>
+                    <p>46.472.698/0001-49</p>
+                </div>
+                <div class="donationItem">
+                    <h2>Doação Bancaria</h2>
+                    <div class="donationBank">
+                        <p><span class="boldTitles">Agencia: </span>3583-1</p>
+                        <p><span class="boldTitles">Conta: </span>Conta Corrente 40213-3</p>
+                        <p><span class="boldTitles">Banco: </span>Banco do Brasil</p>
+                        <p><span class="boldTitles">Beneficiario: </span>Associação Ana Cecília</p>
+                    </div>
+                </div>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="informacoes">

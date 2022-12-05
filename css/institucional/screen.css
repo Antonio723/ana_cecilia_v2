@@ -43,6 +43,7 @@ hr{
 .partnerCards{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 20px;
 }
 
 .partnerCard{
