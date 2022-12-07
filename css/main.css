@@ -16,6 +16,11 @@
     --background-secondary-dark: #E04B4B;
     --selecionado: #E0E0E0;
 }
+
+h1{
+    font-size: 2em;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -118,7 +123,6 @@ footer{
     flex-direction: column;
     align-items: center;
     font-weight: 100;
-    
 }
 
 .copyright h3{
@@ -126,11 +130,9 @@ footer{
     text-align: center;
 }
 
-
 .strong{
     font-weight: 700;
 }
-
 
 main{
     background-image: linear-gradient( rgba(255,255,255,.8) 0%,rgba(255,255,255,.8) 100%),url("../img/logo_ana_cecilia_v6.png");
