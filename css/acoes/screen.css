@@ -4,4 +4,37 @@ main{
     align-items: center;
     padding: 50px 80px 20px 80px;
     text-align: justify;
+    row-gap: 50px;
 }
+
+.news{
+    display: flex;
+    column-gap: 20px;
+}
+
+.news>img{
+    max-width: 280px;
+    height: 100%;
+    border-radius: 8px;
+    border: solid 1px #8d8d8d;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.headerAboutRight{
+    text-align: right;
+}
+
+.text{
+    font-size: 1.3em;
+    overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 5; 
+     -webkit-box-orient: vertical; 
+}
+
