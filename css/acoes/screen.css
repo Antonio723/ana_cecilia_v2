@@ -10,6 +10,16 @@ main{
 .news{
     display: flex;
     column-gap: 20px;
+    background-color: #b4b4b499;
+    padding: 20px 10px;
+    border-radius: 15px;
+    color: #333;
+}
+
+.news:hover{
+    background-color: #b4b4b4cc;
+    cursor: pointer;
+    color: #111;
 }
 
 .news>img{
@@ -36,5 +46,10 @@ main{
      display: -webkit-box;
      -webkit-line-clamp: 5; 
      -webkit-box-orient: vertical; 
+}
+
+hr{
+    width: 100%;
+    border: solid 0.5px #c4c4c4;
 }
 

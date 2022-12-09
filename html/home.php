@@ -15,14 +15,33 @@
 </head>
 
 <body>
+<?php
+    if (!isset($_SESSION))
+        session_start();
+    if (isset($_SESSION["mensagem"])) {
+    ?>
+        <div class="mensagem">
+            <?= $_SESSION["mensagem"] ?>
+            <div class="progress-bar"></div>
+        </div>
+        <script>
+            let teste = document.querySelector(".mensagem");
+            setInterval(() => {
+                teste.style.display = "none";
+            }, 5000);
+        </script>
+    <?php
+        // unset($_SESSION["mensagem"]);
+    }
+    ?>
     <header>
         <figure>
-            <a href="home.html"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo" ></a>
+            <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo" ></a>
         </figure>
         <aside id="menus">
             <nav class="normal_menu">
                 <ul class="menu-screen">
-                    <li class="item_menu"><a href="home.html" class="text_menu selecionado">Home</a></li>
+                    <li class="item_menu"><a href="home.php" class="text_menu selecionado">Home</a></li>
                     <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
                     <li class="item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
@@ -33,7 +52,7 @@
                 <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
                         alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
-                    <li class="item_menu"><a href="home.html" class="text_menu selecionado">Home</a></li>
+                    <li class="item_menu"><a href="home.php" class="text_menu selecionado">Home</a></li>
                     <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
                     <li class="quebraDeTexto item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
@@ -49,7 +68,7 @@
             <div class="subsection">
                 <img src="../img/logo_ana_cecilia_v4.png" alt="cidade">
                 <p>
-                    Ana Cecília nascida em Minas Gerais em 22 novembro de 1934, filha de agricultores. Nasceu com deficiência em um dos membros superiores, porém isso não a impediu de se casar e ter 13 filhos, também nunca se limitou as dificuldades da sua vida. Sempre batalhadora e ajudando a todos, mesmo depois de viúva, continuou sua missão de cuidar da família e de todos que se encontravam com dificuldades. Participando da Associação São Vicente de Paulo, seu objetivo de ajudar e visitar ficou ainda mais ativo, conseguindo maior conforto e até criar momentos de partilha e interação. Ana faleceu em 20 de maio de 2019, deixando o legado de que ajudar a todos que passam por dificuldades é uma imensa alegria, pois quem tem fome, tem pressa. Ainda dada continuidade em seu proposito tão marcante em vida, pois, seu exemplo deixou marcas, e continuar sua missão será sempre um desafio.
+                    Ana Cecília, nascida em Minas Gerais em 22 novembro de 1934, filha de agricultores. Nasceu com deficiência em um dos membros superiores, porém isso não a impediu de se casar e ter 13 filhos, também nunca se limitou as dificuldades da sua vida. Sempre batalhadora e ajudando a todos, mesmo depois de viúva, continuou sua missão de cuidar da família e de todos que se encontravam com dificuldades. Participando da Associação São Vicente de Paulo, seu objetivo de ajudar e visitar ficou ainda mais ativo, conseguindo maior conforto e até criar momentos de partilha e interação. Ana faleceu em 20 de maio de 2019, deixando o legado de que ajudar a todos que passam por dificuldades é uma imensa alegria, pois quem tem fome, tem pressa. Ainda dada continuidade em seu proposito tão marcante em vida, pois, seu exemplo deixou marcas, e continuar sua missão será sempre um desafio.
                 </p>
             </div>
         </article>

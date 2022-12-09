@@ -15,14 +15,33 @@
 </head>
 
 <body>
-<header>
+    <?php
+    if (!isset($_SESSION))
+        session_start();
+    if (isset($_SESSION["mensagem"])) {
+    ?>
+        <div class="mensagem">
+            <?= $_SESSION["mensagem"] ?>
+            <div class="progress-bar"></div>
+        </div>
+        <script>
+            let teste = document.querySelector(".mensagem");
+            setInterval(() => {
+                teste.style.display = "none";
+            }, 7000);
+        </script>
+    <?php
+        // unset($_SESSION["mensagem"]);
+    }
+    ?>
+    <header>
         <figure>
-            <a href="home.html"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo" ></a>
+            <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo"></a>
         </figure>
         <aside id="menus">
             <nav class="normal_menu">
                 <ul class="menu-screen">
-                    <li class="item_menu"><a href="home.html" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
                     <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
                     <li class="item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
@@ -30,10 +49,9 @@
                 </ul>
             </nav>
             <nav class="mobile">
-                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
-                        alt="menu_icon" class="icon" id="icon_menu"></button>
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png" alt="menu_icon" class="icon" id="icon_menu"></button>
                 <ul class="menu-mobile">
-                    <li class="item_menu"><a href="home.html" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
                     <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
                     <li class="quebraDeTexto item_menu causa"><a href="juntese.html" class="text_menu ">Junte-se à causa</a></li>
@@ -56,15 +74,15 @@
                 <h2>Tipo de doação</h2>
                 <div class="donationType">
                     <div class="donationTypeItem">
-                        <input id="typeMoeny" type="checkbox" name="" id="">
+                        <input id="typeMoeny" type="checkbox" name="typeMoney" id="">
                         <label for="typeMoeny">dinheiro</label>
                     </div>
                     <div class="donationTypeItem">
-                        <input id="typeFood" type="checkbox" name="" id="">
+                        <input id="typeFood" type="checkbox" name="typeFood" id="">
                         <label for="typeFood">alimento/material</label>
                     </div>
                     <div class="donationTypeItem">
-                        <input id="typeServices" type="checkbox" name="" id="">
+                        <input id="typeServices" type="checkbox" name="typeServices" id="">
                         <label for="typeServices">Serviços</label>
                     </div>
                 </div>

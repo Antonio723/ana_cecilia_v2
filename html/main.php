@@ -5,8 +5,9 @@
     require('../database/conexao.php');
 
     $tipoDoacao = implode(" ",tipoDoacao());
-
     $doacao = tratarDoacao($_POST);
+
+    session_start();
 
     if(tipoDoacaoValido(tipoDoacao())){
         $name = $doacao["nome"];
@@ -15,11 +16,13 @@
         $sql = "INSERT INTO doacao (nome, email, telefone, tipoDoacao) VALUES('$name','$email','$tel','$tipoDoacao')";
         $result = mysqli_query($conexao, $sql) or die(mysqli_error($conexao));
         var_dump($result);
+        $_SESSION["mensagem"]= "Entraremos em contato";
         mysqli_close($conexao);
-        header("Location: home.html");
+        header("Location: home.php");
         die();
     
     }else{
+        $_SESSION["mensagem"]= "Preencha o tipo de doação";
         header("Location: doacao.php");
         die();
     }
