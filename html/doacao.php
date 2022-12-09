@@ -31,7 +31,7 @@
             }, 7000);
         </script>
     <?php
-        // unset($_SESSION["mensagem"]);
+        unset($_SESSION["mensagem"]);
     }
     ?>
     <header>
