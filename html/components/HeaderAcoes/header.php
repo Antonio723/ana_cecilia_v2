@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="components/header.css">
+<link rel="stylesheet" href="../components/HeaderAcoes/header.css">
 <header>
     <figure>
-        <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo"></a>
+        <a href="home.php"><img src="../../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo"></a>
     </figure>
     <aside id="menus">
         <nav class="normal_menu">

@@ -15,34 +15,9 @@
 </head>
 
 <body>
-    <header>
-        <figure>
-            <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo" ></a>
-        </figure>
-        <aside id="menus">
-            <nav class="normal_menu">
-                <ul class="menu-screen">
-                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
-                    <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
-                    <li class="item_menu causa"><a href="juntese.html" class="text_menu selecionado">Junte-se à causa</a></li>
-                    <li class="item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile">
-                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
-                        alt="menu_icon" class="icon" id="icon_menu"></button>
-                <ul class="menu-mobile">
-                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
-                    <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
-                    <li class="quebraDeTexto item_menu causa"><a href="juntese.html" class="text_menu selecionado">Junte-se à causa</a></li>
-                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-    </header>
+<?php
+        require_once 'components/headerDefault/header.php';
+    ?>
     <main>
         <h1>Junte-se à causa</h1>
         <div class="firstPart">
@@ -97,19 +72,4 @@
         </div>
     </footer>
 </body>
-<script>
-    function AbrirMenu() {
-        if (document.querySelector('.menu-mobile').style.display != "none") {
-            document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
-            document.querySelector('.mobile').style.marginTop = '0px';
-            document.querySelector('.icon').style.transform = "rotate(0deg)"; //menu fechado
-        } else {
-            document.querySelector('.icon').style.transform = "rotate(90deg)"; //menu fechado
-            document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
-            document.querySelector('.mobile').style.marginTop = '300px';
-        }
-    }
-    AbrirMenu();
-</script>
-
 </html>

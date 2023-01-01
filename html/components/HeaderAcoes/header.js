@@ -9,16 +9,17 @@ function AbrirMenu() {
         document.querySelector('.mobile').style.marginTop = '300px';
     }
 }
+AbrirMenu();
 
 const url = window.location.href;
 let actualMenu = "";
-const regexMask = ".*\/(.*)\/(.*)\.|html|php^";
+const regexMask = ".*\/(.*)\/(.*)\.php$";
 
 if (url.match(regexMask)[1] == "html") actualMenu = url.match(regexMask)[2];
 else actualMenu = url.match(regexMask)[1];
 
 
 /*Através da url atribui a classe de estilização de menu selecionado*/
-console.log(actualMenu);
-// document.getElementById(`${actualMenu}`).classList.add("selecionado");
+// console.log(actualMenu);
+document.getElementById(`${actualMenu}`).classList.add("selecionado");
 

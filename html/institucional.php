@@ -16,7 +16,7 @@
 
 <body>
     <?php
-    require_once 'components/header.php'
+        require_once 'components/headerDefault/header.php';
     ?>
     <main>
         <h1 class="bold">NOSSA EQUIPE</h1>
@@ -122,5 +122,4 @@
         </div>
     </footer>
 </body>
-
 </html>

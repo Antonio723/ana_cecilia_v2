@@ -1,4 +1,4 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,7 @@ main{
     row-gap: 50px;
 }
 
-.news{
+.news {
     display: flex;
     column-gap: 20px;
     background-color: #b4b4b499;
@@ -16,40 +16,45 @@ main{
     color: #333;
 }
 
-.news:hover{
+.news:hover {
     background-color: #b4b4b4cc;
     cursor: pointer;
     color: #111;
 }
 
-.news>img{
+.news>img {
     max-width: 280px;
     height: 100%;
     border-radius: 8px;
     border: solid 1px #8d8d8d;
 }
 
-.texts{
+.texts {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.headerAboutRight{
-    text-align: right;
-}
-
-.text{
+.text {
     font-size: 1.3em;
     overflow: hidden;
-     text-overflow: ellipsis;
-     display: -webkit-box;
-     -webkit-line-clamp: 5; 
-     -webkit-box-orient: vertical; 
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
-hr{
+hr {
     width: 100%;
     border: solid 0.5px #c4c4c4;
 }
 
+@media (max-width:480px) {
+    .news {
+        width: 80vw;
+        flex-direction: column;
+        background-color: #b4b4b4cc;
+        cursor: pointer;
+        color: #111;
+    }
+}

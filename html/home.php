@@ -34,34 +34,9 @@
         // unset($_SESSION["mensagem"]);
     }
     ?>
-    <header>
-        <figure>
-            <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo" ></a>
-        </figure>
-        <aside id="menus">
-            <nav class="normal_menu">
-                <ul class="menu-screen">
-                    <li class="item_menu"><a href="home.php" class="text_menu selecionado">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
-                    <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
-                    <li class="item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
-                    <li class="item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile">
-                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png"
-                        alt="menu_icon" class="icon" id="icon_menu"></button>
-                <ul class="menu-mobile">
-                    <li class="item_menu"><a href="home.php" class="text_menu selecionado">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
-                    <li class="item_menu"><a href="acoes/acoes.html" class="text_menu">Nossas ações</a></li>
-                    <li class="quebraDeTexto item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
-                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-    </header>
+    <?php
+        require_once 'components/headerDefault/header.php'
+    ?>
     <main>
         <article class="one">
             <h2 class="strong">Biografia Ana Cecilia</h2>
@@ -72,19 +47,6 @@
                 </p>
             </div>
         </article>
-        <!-- <h1 class="strong">Nossa Historia</h1>
-        <article class="two">
-            <p>Mourou um tempo na cidade, casa de familiares para estudar, mesmo que fosse o básico. Casou-se com Manoel
-                de Souza neto. E algum tempo depois já com 1 filho nos braços foram residir em São Jorge do Ivaí no
-                Paraná. Segundo ela antes de chegar ao Paraná tiveram que fugir de latifundiários mineiros chamados de
-                Coiotes, que recrutavam famílias para trabalho escravo.
-            </p>
-            <img src="../img/docao2.png" alt="">
-            <p>Já morando no Paraná tiveram mais 12 filhos, totalizando 13. Trabalhavam muito para o sustento e bem
-                estar dos mesmo. Em 1980, devido a fragilidade da saúde de seu Manoel, viram para Cotia (SP), à procura
-                de tratamento cardiológico e melhoras para toda família.
-            </p>
-        </article> -->
     </main>
     <footer>
         <div class="informacoes">
@@ -117,20 +79,4 @@
         </div>
     </footer>
 </body>
-<script>
-    function AbrirMenu() {
-        if (document.querySelector('.menu-mobile').style.display != "none") {
-            document.querySelector('.menu-mobile').style.display = "none"; //menu fechado
-            document.querySelector('.mobile').style.marginTop = '0px';
-            document.querySelector('.icon').style.transform = "rotate(0deg)"; //menu fechado
-        } else {
-            document.querySelector('.icon').style.transform = "rotate(90deg)"; //menu fechado
-            document.querySelector('.menu-mobile').style.display = "flex"; //menu fechado
-            document.querySelector('.mobile').style.marginTop = '300px';
-        }
-    }
-
-    AbrirMenu();
-</script>
-
 </html>

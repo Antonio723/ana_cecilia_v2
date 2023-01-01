@@ -3,39 +3,7 @@
         background-size: 100%;
     }
 
-    .normal_menu{
-        display: none;
-    }
-
-    .mobile{
-        display: flex;
-        flex-direction: column;
-        margin-top: 250px;
-        position: relative;
-        background-color: var(--backgroun-color-dark);
-        border-radius: 15px;
-    }
     
-    .menu-mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 30px;
-    }
-
-    #icon_menu{
-        width: 50px;
-        width: 50px;
-    }
-
-    .icon{
-        background-color: var(--backgroun-color-dark);
-        
-    }
-
-    #menu-mobile-button{
-        background-color: var(--backgroun-color-dark);
-    }
 
     .mapa{
         display: none;
