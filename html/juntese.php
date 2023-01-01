@@ -15,9 +15,33 @@
 </head>
 
 <body>
-<?php
-        require_once 'components/headerDefault/header.php';
-    ?>
+<header>
+        <figure>
+            <a href="home.php"><img src="../img/logo_ana_cecilia_v4.png" alt="logo" id="main_logo"></a>
+        </figure>
+        <aside id="menus">
+            <nav class="normal_menu">
+                <ul class="menu-screen">
+                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="institucional.php" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="acoes/" class="text_menu">Nossas ações</a></li>
+                    <li class="item_menu causa"><a href="juntese.php" class="text_menu selecionado">Junte-se à causa</a></li>
+                    <li class="item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <button id="menu-mobile-button" onclick="AbrirMenu()"><img src="../img/menu_mobile_v3.png" alt="menu_icon" class="icon" id="icon_menu"></button>
+                <ul class="menu-mobile">
+                    <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
+                    <li class="item_menu"><a href="institucional.php" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="acoes/" class="text_menu">Nossas ações</a></li>
+                    <li class="quebraDeTexto item_menu causa"><a href="juntese.php" class="text_menu selecionado">Junte-se à causa</a></li>
+                    <li class="quebraDeTexto item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
     <main>
         <h1>Junte-se à causa</h1>
         <div class="firstPart">
@@ -52,10 +76,7 @@
                 </div>
             </div>
             <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.838479674918!2d-46.941671899999996!3d-23.610125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf07820a013bcf%3A0xb15d1e66a804adf2!2sR.%20Ipiau%2C%206%20-%20Jardim%20Leonor%2C%20Cotia%20-%20SP%2C%2006700-581!5e0!3m2!1spt-BR!2sbr!4v1667128022669!5m2!1spt-BR!2sbr"
-                    width="400" height="150" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.838479674918!2d-46.941671899999996!3d-23.610125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf07820a013bcf%3A0xb15d1e66a804adf2!2sR.%20Ipiau%2C%206%20-%20Jardim%20Leonor%2C%20Cotia%20-%20SP%2C%2006700-581!5e0!3m2!1spt-BR!2sbr!4v1667128022669!5m2!1spt-BR!2sbr" width="400" height="150" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contato">
                 <h2>Contato</h2>
@@ -72,4 +93,5 @@
         </div>
     </footer>
 </body>
+
 </html>
