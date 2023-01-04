@@ -45,8 +45,4 @@ h1{
     .imgRight{
         flex-direction: column;
     }
-
-    .news{
-        flex-direction: column;
-    }
 }
