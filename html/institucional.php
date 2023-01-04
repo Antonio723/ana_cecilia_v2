@@ -146,5 +146,5 @@
         </div>
     </footer>
 </body>
-
+<script src="../script/menuMobile.js"></script>
 </html>

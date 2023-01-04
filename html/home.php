@@ -31,7 +31,7 @@
             }, 5000);
         </script>
     <?php
-        // unset($_SESSION["mensagem"]);
+        unset($_SESSION["mensagem"]);
     }
     ?>
     <header>
@@ -104,4 +104,5 @@
         </div>
     </footer>
 </body>
+<script src="../script/menuMobile.js"></script>
 </html>
