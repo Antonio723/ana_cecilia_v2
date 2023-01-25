@@ -104,7 +104,7 @@
                 <div class="partnerCard">
                     <img src="../img/lemonLogo.png" alt="logo">
                     <div class="partnerTexts ">
-                        <h3 class="bold">Lemon</h3>
+                        <h3 class="bold">TMT</h3>
                         <p><a href="https://www.lemonsolucoes.com/">lemonsolucoes...</a></p>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
         </div>
         <div class="copyright">
             <h3>Copyright ₢ 2022 <span class="strong">Associação Ana Cecília</span> todos direitos reservados</h3>
-            <h3>Desenvolvido por <a href="http://lemonsolucoes.com"><span>Lemon</span></a></h3>
+            <h3>Desenvolvido por <a href="http://lemonsolucoes.com"><span>TMT</span></a></h3>
         </div>
     </footer>
 </body>

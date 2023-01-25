@@ -89,7 +89,7 @@
         </div>
         <div class="copyright">
             <h3>Copyright ₢ 2022 <span class="strong">Associação Ana Cecília</span> todos direitos reservados</h3>
-            <h3>Desenvolvido por <a href="http://lemonsolucoes.com"><span>Lemon</span></a></h3>
+            <h3>Desenvolvido por <a href="http://lemonsolucoes.com"><span>TMT</span></a></h3>
         </div>
     </footer>
 </body>
