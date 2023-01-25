@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo_ana_cecilia_v4.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/logo_ana_cecilia_v4.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/main_mobile.css">
     <link rel="stylesheet" href="../../css/acoes/screen.css">
@@ -65,7 +65,7 @@
         </a>
         <a href="dezembro2.php">
             <article class="news">
-                <img src="../../img/dez2-19-12-2022_16.42.png" alt="">
+                <img src="../../img/dez2-19-12-2022_16.42.png" alt="imagem">
                 <article class="texts">
                     <section>
                         <h1 class="strong">Pre Natal 2022</h1>
@@ -80,6 +80,24 @@
                             teve o intuito de aproximar os necessitados e prover um momento de grande partilhar onde
                             teve sorteios de roupas novas e uma atividade em grupo com direto a música e dias ótimas
                             refeições</p>
+                    </section>
+                </article>
+            </article>
+        </a>
+        <a href="2023-janeiro1.php">
+            <article class="news">
+                <img src="../../img/07012023-2.jpeg" alt="imagem">
+                <article class="texts">
+                    <section>
+                        <h1 class="strong">Janeiro 2023</h1>
+                        <span class="subTitle">
+                            <p>7/1/2023 Felipe Souto Dias</p>
+                        </span>
+                    </section>
+                    <section class="imgRight text">
+                        <p>
+                        No dia 07 de janeiro de 2023, aconteceu a segunda entrega de marmitas do ano com a mesma constância de 60 unidades. Priorizando trazer o mais próximo possível os nossos iguais em situação de vulnerabilidade, e com muita satisfação podemos receber o agradecimento direto de todos eles à nossa instituição. Assim agradecemos a todos que nos ajudam de maneira direta ou indireta a fazer esse trabalho maravilhoso.
+                        </p>
                     </section>
                 </article>
             </article>

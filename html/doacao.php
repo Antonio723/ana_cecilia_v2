@@ -41,9 +41,9 @@
             <nav class="normal_menu">
                 <ul class="menu-screen">
                     <li class="item_menu"><a href="home.php" class="text_menu">Home</a></li>
-                    <li class="item_menu"><a href="institucional.html" class="text_menu">Institucional</a></li>
+                    <li class="item_menu"><a href="institucional.php" class="text_menu">Institucional</a></li>
                     <li class="item_menu"><a href="acoes/" class="text_menu">Nossas ações</a></li>
-                    <li class="item_menu causa"><a href="juntese.html" class="text_menu">Junte-se à causa</a></li>
+                    <li class="item_menu causa"><a href="juntese.php" class="text_menu">Junte-se à causa</a></li>
                     <li class="item_menu doacao"><a href="doacao.php" class="text_menu">QUERO DOAR</a></li>
                 </ul>
             </nav>

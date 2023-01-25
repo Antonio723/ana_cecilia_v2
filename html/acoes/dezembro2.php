@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/main_mobile.css">
     <link rel="stylesheet" href="../../css/acoes/main.css">
     <link rel="stylesheet" href="../../css/acoes/mobile.css">
-    <title>Doação</title>
+    <title>Dezembro 2</title>
 </head>
 
 <body>

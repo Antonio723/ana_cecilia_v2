@@ -41,8 +41,30 @@ h1{
     border: solid 1px #c4c4c4;
 }
 
+.galleryImg{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+
+.galleryImg>img{
+    max-width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    border: solid 1px #c4c4c4; 
+}
+
 @media (max-width:480px) {
     .imgRight{
         flex-direction: column;
+    }
+
+    .galleryImg>img{
+        max-width: 200px;
+    }
+
+    main{
+        padding: 30px 20px;
     }
 }
