@@ -7,7 +7,8 @@ create table AnaCecilia.doacao(
     nome varchar(255),
     email varchar(255),
     telefone varchar(255),
-    tipoDoacao varchar(255)
+    tipoDoacao varchar(255),
+    info varchar(255)
 );
 
 

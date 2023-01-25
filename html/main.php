@@ -13,7 +13,8 @@
         $name = $doacao["nome"];
         $tel = $doacao["tel"];
         $email = $doacao["email"];
-        $sql = "INSERT INTO doacao (nome, email, telefone, tipoDoacao) VALUES('$name','$email','$tel','$tipoDoacao')";
+        $info = $doacao["info"];
+        $sql = "INSERT INTO doacao (nome, email, telefone, tipoDoacao, info) VALUES('$name','$email','$tel','$tipoDoacao','$info')";
         $result = mysqli_query($conexao, $sql) or die(mysqli_error($conexao));
         var_dump($result);
         $_SESSION["mensagem"]= "Entraremos em contato";
@@ -37,8 +38,12 @@
         if(isset($array['email'])){
             $email = $array['email'];
         }
-
-        return array('nome'=>$nome,"tel"=>$tel, "email"=>$email);
+        if(isset($array['aboutDonation'])){
+            $info = $array['email'];
+        }else{
+            $info = "";
+        }
+        return array('nome'=>$nome,"tel"=>$tel, "email"=>$email, 'info'=>$info);
     }
 
     function tipoDoacao(){
