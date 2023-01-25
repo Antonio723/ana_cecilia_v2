@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <input type="text" id="aboutDonation" placeholder="Escreva observações ou descrição da sua doação (caso necessario):">
+            <input type="text" id="aboutDonation" name="aboutDonation" placeholder="Escreva observações ou descrição da sua doação (caso necessario):">
             <div class="terms">
                 <div class="termItem">
                     <input type="checkbox" name="privacityPolitic" id="privacityPolitic" required>

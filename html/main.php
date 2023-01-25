@@ -14,6 +14,7 @@
         $tel = $doacao["tel"];
         $email = $doacao["email"];
         $info = $doacao["info"];
+
         $sql = "INSERT INTO doacao (nome, email, telefone, tipoDoacao, info) VALUES('$name','$email','$tel','$tipoDoacao','$info')";
         $result = mysqli_query($conexao, $sql) or die(mysqli_error($conexao));
         var_dump($result);
@@ -39,7 +40,7 @@
             $email = $array['email'];
         }
         if(isset($array['aboutDonation'])){
-            $info = $array['email'];
+            $info = $array['aboutDonation'];
         }else{
             $info = "";
         }
